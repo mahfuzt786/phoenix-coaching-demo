@@ -6,8 +6,32 @@
                 font-style: oblique;
                background-color: #f888aa;
                }
+               div.abc h1.aa:hover{
+                                        color: #111599 ;
+               }
    div.abcd h1.aa{
                 color: #245678 ;
                 font-style: oblique;
                background-color: #876542;
+               }
+               input {
+                        background-color: #000000;
+                        color: #ffffff;
+                        height:35px;
+                        width: 200px;
+                        text-align: center;
+                        margin-top: 20px; 
+               }
+               div.ef input.we{
+                         background-color: #234567;
+                         
+               }
+               div.ef input{
+                       margin-left: 60px;
+               }
+                  div.abcd input.qw{
+                         background-color: #234587;
+               }
+               div.ef input:first-child{
+                        margin-left: 0px;
                }
