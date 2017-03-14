@@ -24,7 +24,7 @@ body {
         div.form input.age{
                 margin-left: 65px;
         }
-         div.form input.add{
+         div.form textarea.add{
                 margin-left: 40px;
         }
         div.form form{
