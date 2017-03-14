@@ -1,0 +1,36 @@
+body {
+                background-color: #99ff99;
+        }
+        div.title{
+                background-color: #00cc44;
+                height: 55px;
+                text-align: center;
+                margin-left: 0px;
+                
+        }
+        div.form 
+                input  {
+                               
+                                color: #ffffff;
+                                height:20px;
+                                width: 300px;
+                                text-align: center;
+                                margin-left: 20px;
+                        }
+        div.form input:first-child{
+                                margin-top: 40px;
+                        }
+                        
+        div.form input.age{
+                margin-left: 65px;
+        }
+         div.form input.add{
+                margin-left: 40px;
+        }
+        div.form form{
+                width: 500px;
+                border: 2px solid green;
+                padding: 25px;
+                margin: 25px;
+                background-color:  #00cc44;
+        }
