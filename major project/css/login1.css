@@ -1,0 +1,72 @@
+body{
+    background: #345676;
+}
+    h1.head{
+        background-color: #754578;
+        color: #ffffff;
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+    }
+    div.row {
+        float: left;
+        width: 100%;
+        height: 3em;
+        background: #344556;
+    }
+    div.row div.label {
+        float: left;
+        width: 25%;
+        height: 3em;
+        margin-right:  5%;
+        line-height: 3em;
+        text-align: right;
+        
+    }
+    div.row div.input {
+        float: left;
+        width: 70%;
+        height: 3em;
+    }
+    div.row1{
+        float: left;
+        width: 100%;
+        height: 3em;
+        background: #344556;
+    }
+    div.row1 div.pass{
+        float: left;
+        width: 25%;
+        height: 3em;
+        margin-right:  5%;
+        line-height: 3em;
+        text-align: right;
+    }
+    div.row1 div.input{
+         float: left;
+         width: 70%;
+         height: 3em;
+    }
+    div.row3{
+        float:left;
+        width:100%;
+        height: 4em;
+         margin-top: 2em;
+        }
+    div.row3 div.btn{
+        float: left;
+        width: 40%;
+        height: 3em;
+        margin-top:0em;
+        margin-left: 30%;
+    }
+    div.row3 div.btn a.but{
+        text-transform: capitalize;
+        color: #672445;
+    }
+    div.row3 div.btn a.but:hover {
+        color:#ff0000;
+    }
+    
+    
+   

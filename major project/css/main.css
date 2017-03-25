@@ -1,0 +1,597 @@
+body{
+    background: #345678;
+}
+.ui-title{
+    padding:0 !important;
+    margin-top: 0.1em !important;
+}
+.ui-header{
+    line-height: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+div.ui-btn-right a{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #526c5a;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    margin-top: 0.3em;
+}
+span#cartQuantity{
+    position: absolute;
+    top: 2px;
+    left: 12px;
+	color: #526c5a;
+}
+i.fa{
+    color: #526c5a;
+}
+i.faHeader {
+    color: #FFF;
+    width: 5%;
+}
+div#customHeader {
+    background-color: #FFF;
+    padding-bottom: 4px;
+    position: fixed;
+    -webkit-transform: translateZ(0);
+}
+/*  Begin Footer    */
+div.footer-custom {
+    font-size: 0.76em;
+    color: #666666;
+    text-align: center;
+}
+/*  End Footer  */
+.ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset {
+    margin: 0;
+}
+.ui-panel {
+    min-height: 100px;
+    height: auto;
+    max-height: none;
+}
+/*html .ui-panel-page-container-a {
+    background-color: transparent;
+    text-shadow: none;
+}*/
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background-color: #f6f6f6;
+}
+.ui-icon-bars::after {
+    background-image: url("../images/icon_navbar.png");
+    background-color: #FFF;
+    background-size: 80%;
+}
+.ui-icon-search-custom::after {
+    background-image: url("../images/icon_search.png");
+    background-color: #FFF;
+    background-size: 90%;
+}
+.ui-icon-cart-custom::after {
+    background-image: url("../images/icon_cart.png");
+    background-color: #FFF;
+    background-size: 90%;
+}
+.ui-icon-save-custom::after {
+    background-image: url("../images/icon_saved.png");
+    background-color: #FFF;
+    background-size: 90%;
+}
+#panelMainMenu {
+    margin-top: 2.6em;
+    border-left: none;
+    min-height: 100px;
+}
+#panelMainMenu ul li a.menuLinks {
+    color: #526c5a;
+    font-size: 0.9em;
+    border-radius: 0;
+}
+#panelMainMenu ul li a.menuLinks:hover {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#panelMainMenu ul li.listHeader {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupClinic {
+    margin-top: 2.6em;
+    border-left: none;
+    min-height: 100px;
+}
+#popupClinic ul li a.menuLinks {
+    color: #526c5a;
+    font-size: 0.9em;
+    border-radius: 0;
+}
+#popupClinic ul li a.menuLinks:hover {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupClinic ul li.listHeader {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupBrand {
+    margin-top: 2.6em;
+    border-left: none;
+    min-height: 100px;
+}
+#popupBrand ul li a.menuLinks {
+    color: #526c5a;
+    font-size: 0.9em;
+    border-radius: 0;
+}
+#popupBrand ul li a.menuLinks:hover {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupBrand ul li.listHeader {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupSymptom {
+    margin-top: 2.6em;
+    border-left: none;
+    min-height: 100px;
+}
+#popupSymptom ul li a.menuLinks {
+    color: #526c5a;
+    font-size: 0.9em;
+    border-radius: 0;
+}
+#popupSymptom ul li a.menuLinks:hover {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupSymptom ul li.listHeader {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupPractitioner {
+    margin-top: 2.6em;
+    border-left: none;
+    min-height: 100px;
+}
+#popupPractitioner ul li a.menuLinks {
+    color: #526c5a;
+    font-size: 0.9em;
+    border-radius: 0;
+}
+#popupPractitioner ul li a.menuLinks:hover {
+    background-color: #8aa292;
+    color: #FFF;
+}
+#popupPractitioner ul li.listHeader {
+    background-color: #8aa292;
+    color: #FFF;
+}
+/** error alerts customized **/
+div#popupError {
+    background-color: #fff;
+    height: 21.5em;
+    width: 18em;
+}
+div#popupError .ui-btn-icon-notext::after {
+    background-color: #8aa292;
+}
+div#popupError #errorHeader {
+    /*height: 2em;
+    background: #8AA292;
+    color: #FFF;
+    text-align: left;*/
+    background: #8aa292 none repeat scroll 0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    height: 3em;
+    margin: 0 0 0 -2px;
+    padding: 0;
+    text-align: left;
+    width: 18.25em;
+}
+div#popupError #errorHeader h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2em;
+    margin-left: 15px;
+    text-align: left;
+}
+div#popupError .successImgWrapper {
+    float: left;
+    height: 8em;
+    line-height: 14em;
+    text-align: center;
+    width: 100%;
+}
+div#popupError .successImgWrapper img.imgSuccess {
+    width: 7em;
+}
+div#popupError p.errorMessage {
+    color: #000;
+    float: left;
+    font-size: 0.86em;
+    height: 8em;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+div#popupError a.btnOk {
+    background-color: #8aa292 !important;
+    bottom: 0;
+    color: #fff;
+    float: left;
+    width: 90%;
+}
+/** success alerts customized **/
+div#popupSuccess {
+    background-color: #fff;
+    height: 21.5em;
+    width: 18em;
+}
+div#popupSuccess .ui-btn-icon-notext::after {
+    background-color: #8aa292;
+}
+div#popupSuccess #successHeader {
+    background: #8aa292 none repeat scroll 0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    height: 3em;
+    margin: 0 0 0 -2px;
+    padding: 0;
+    text-align: left;
+    width: 18.25em;
+}
+div#popupSuccess #successHeader h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2em;
+    margin-left: 15px;
+    text-align: left;
+}
+div#popupSuccess .successImgWrapper {
+    float: left;
+    height: 8em;
+    line-height: 14em;
+    text-align: center;
+    width: 100%;
+}
+div#popupSuccess .successImgWrapper img.imgSuccess {
+    width: 7em;
+}
+div#popupSuccess p.successMessage {
+    color: #000;
+    float: left;
+    font-size: 0.86em;
+    height: 8em;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+div#popupSuccess a.btnOk {
+    background-color: #8aa292 !important;
+    bottom: 0;
+    color: #fff;
+    float: left;
+    width: 90%;
+}
+div#nav-iss-attach ul#search_box {
+    height: auto;
+    max-height: 17em;
+    margin-top: -7px;
+    overflow-y: scroll;
+    position: fixed;
+    width: 60%;
+    z-index: 1021;
+    display: none;
+}
+div#nav-iss-attach ul#search_box li a:hover {
+    background: #eee;
+}
+div#nav-iss-attach ul#search_box li a {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    color: #526c5a;
+    font-size: 0.9em;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+div#nav-iss-attach .ui-input-search input, div#nav-iss-attach .ui-input-text input {
+    background: #fff none repeat scroll 0 0;
+    margin: 6px 0 0;
+    padding-left: 2.25em;
+}
+div#nav-iss-attach div.ui-input-search::after, div#nav-iss-attach div.ui-input-text::after {
+    background-image: none;
+    background-image: url("../images/logo_mini.png");
+    background-position: -2px -2px;
+    background-repeat: no-repeat;
+    background-size: 25px 22px;
+    height: 20px;
+    opacity: 1;
+    width: 30px;
+}
+div#nav-iss-attach div.ui-input-search, div#nav-iss-attach div.ui-input-text {
+    background: #FFF;
+}
+#nav-searchbar .ui-filterable .ui-input-search .ui-input-clear {
+    background: #FFF;
+    margin-top: -5px;
+}
+#nav-searchbar .ui-filterable .ui-input-search .ui-input-clear::after {
+    background-image: url('../images/search-x.svg');
+    background-size: 14px 14px;
+}
+/** confirm alerts customized **/
+div#popupConfirm {
+    background-color: #fff;
+    height: 23.5em;
+    width: 18em;
+}
+div#popupConfirm .ui-btn-icon-notext::after {
+    background-color: #8aa292;
+}
+div#popupConfirm #successHeader {
+    background: #8aa292 none repeat scroll 0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    height: 3em;
+    margin: 0 0 0 -2px;
+    padding: 0;
+    text-align: left;
+    width: 18.25em;
+}
+div#popupConfirm #successHeader h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2em;
+    margin-left: 15px;
+    text-align: left;
+}
+div#popupConfirm .successImgWrapper {
+    float: left;
+    height: 8em;
+    line-height: 14em;
+    text-align: center;
+    width: 100%;
+}
+div#popupConfirm .successImgWrapper img.imgConfirm {
+    width: 7em;
+}
+div#popupConfirm p.confirmMessage {
+    color: #000;
+    float: left;
+    font-size: 0.86em;
+    height: 10em;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    overflow: hidden;
+}
+div#popupConfirm a.btnYes {
+    background-color: #8aa292 !important;
+    bottom: 0;
+    color: #fff;
+    float: left;
+    width: 35%;
+    margin-right: 10%;
+}
+div#popupConfirm a.btnNo {
+    background-color: #666 !important;
+    bottom: 0;
+    color: #fff;
+    float: left;
+    width: 35%;
+    margin-right: 0;
+}
+/** page header with menu and back link **/
+div.headingBack {
+    height: 2.1em;
+    background-color: #CCC;
+    position: fixed;
+    line-height: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    margin-top: 0;
+}
+div#headBorder {
+    height: 2em;
+    margin-top: -4px;
+    width: auto;
+}
+div.headingBack div.headPrev {
+    cursor: pointer;
+    float: left;
+    line-height: 2.3em;
+    margin-right: 0.4em;
+}
+div.headingBack div.headingName {
+    color: #000;
+    float: left;
+    font-size: 0.9em;
+    font-weight: bold;
+    left: 1.5em;
+    line-height: 2.5em;
+    text-transform: uppercase;
+}
+/*div.headingBack div.headPrev {
+    line-height: 1.6em;
+    cursor: pointer;
+}
+div.headingBack div.headingName {
+    line-height: 1.6em;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    left: 1.5em;
+}*/
+div.headingBack div.headingName a {
+    color: #000;
+    text-decoration: none;
+}
+div.headingBack div.sortPopup {
+    line-height: 1.7em;
+    color: #000;
+}
+div.headingBack div.sortPopup a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+}
+div.headingBack div.sortPopup a:hover {
+    color: #000;
+}
+img.touchImageAnim {
+    display: none;
+    position: absolute;
+	z-index: 99999;
+}
+img.touchImageAnimBig {
+    display: none;
+    position: absolute;
+	z-index: 99998;
+}
+/** login alerts customized **/
+div#popupSignIn {
+    background-color: #fff;
+    height: 21em;
+    width: 18em;
+}
+div#popupSignIn .ui-btn-icon-notext::after {
+    background-color: #8aa292;
+}
+div#popupSignIn #successHeader {
+    background: #8aa292 none repeat scroll 0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    height: 3em;
+    margin: 0 0 0 -2px;
+    padding: 0;
+    text-align: left;
+    width: 18.25em;
+}
+div#popupSignIn #successHeader h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2em;
+    margin-left: 15px;
+    text-align: left;
+}
+div#popupSignIn .successImgWrapper {
+    float: left;
+    height: 9em;
+    line-height: 14em;
+    text-align: center;
+    width: 100%;
+}
+div#popupSignIn .successImgWrapper img.imgLogin {
+    width: 7em;
+}
+div#popupSignIn p.confirmMessage {
+    color: #000;
+    float: left;
+    font-size: 0.86em;
+    height: 6em;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+div#popupSignIn a.btnYes {
+    background-color: #8aa292 !important;
+    bottom: 0;
+    color: #fff;
+    float: left;
+    width: 35%;
+    margin-right: 10%;
+    text-transform: uppercase;
+}
+div#popupSignIn a.btnNo {
+    background-color: #8aa292 !important;
+    bottom: 0;
+    color: #fff;
+    float: left;
+    width: 35%;
+    margin-right: 0;
+    text-transform: uppercase;
+}
+div#popupSort {
+    background-color: #fff;
+    height: 30em;
+    width: 18em;
+    z-index: 999999;
+}
+div#popupSort #sortHeader {
+    height: 2em;
+    background: #8AA292;
+    color: #FFF;
+    text-align: left;
+}
+div#popupSort #sortHeader h1 {
+    line-height: 2em;
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 15px;
+}
+div#popupSort p.belowLines {
+    font-size: 0.86em;
+    margin: 1em 0;
+    color: #000;
+    margin-left: 15px;
+    height: 2em;
+    line-height: 1em;
+	border-bottom: 1px solid #CCC;
+	text-transform: capitalize;
+}
+div#popupSort  p.belowLines:last-child {
+    border-bottom: none;
+}
+div#popupSort p a {
+    color: #526C5A;
+    text-decoration: none;
+    float: left;
+    width: 100%;
+}
+div#popupSort ul#mainMenu {
+    z-index: 999;
+}
+div#popupSort ul#mainMenu li a {
+    color: #526c5a;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+
+.ui-content {
+    padding: 0 2px;
+}
+div.productDetails {
+    /*height: 2.7em;*/
+    background-color: #344556;
+    position: fixed;
+    line-height: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    margin-top: 2.1em;
+}
