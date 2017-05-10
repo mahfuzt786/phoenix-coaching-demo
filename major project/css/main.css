@@ -1,5 +1,5 @@
 body{
-    background: #345678;
+    background: #345676;
 }
 .ui-title{
     padding:0 !important;
@@ -407,11 +407,11 @@ div.headingBack {
     right: 0;
     width: 100%;
     z-index: 99;
-    margin-top: 0;
+    margin-top: -38px;
 }
 div#headBorder {
     height: 2em;
-    margin-top: -4px;
+    margin-top: 3px;
     width: auto;
 }
 div.headingBack div.headPrev {
@@ -429,7 +429,7 @@ div.headingBack div.headingName {
     line-height: 2.5em;
     text-transform: uppercase;
 }
-/*div.headingBack div.headPrev {
+div.headingBack div.headPrev {
     line-height: 1.6em;
     cursor: pointer;
 }
@@ -439,8 +439,9 @@ div.headingBack div.headingName {
     color: #000;
     text-transform: uppercase;
     left: 1.5em;
-}*/
+}
 div.headingBack div.headingName a {
+    margine-top:1em;
     color: #000;
     text-decoration: none;
 }
@@ -587,7 +588,7 @@ div#popupSort ul#mainMenu li a {
 div.productDetails {
     /*height: 2.7em;*/
     background-color: #344556;
-    position: fixed;
+    position:static;
     line-height: 0;
     left: 0;
     right: 0;
