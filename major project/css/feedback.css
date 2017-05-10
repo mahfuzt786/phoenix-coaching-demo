@@ -1,0 +1,47 @@
+}body{
+    background: #345676;
+}
+h1.head{
+        background-color: #754578;
+        color: #ffffff;
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+}
+div.row1{
+    float:left;
+    width:100%;
+    background: #345676;
+}
+div.row1 div.label{
+    color:#ffffff;
+    float: left;
+    width: 10%;
+    height: 3em;
+    margin-right:  5%;
+    line-height: 4em;
+    text-align: left;
+}
+div.row1 div.ab{
+    float:left;
+    width:50%;
+    height:7em;
+    margin-left:0%;
+}
+textarea{
+    height:8em;
+}
+div.row1 div.btn{
+        float: left;
+        width: 25%;
+        height: 5em;
+        margin-top:0em;
+        margin-left: 30%;
+}
+ div.row1 div.btn a.but{
+     text-transform: capitalize;
+     color: #ff0000;
+}
+div.row1 div.btn a.but:hover {
+    color:#672445;
+}
