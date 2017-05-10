@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+		<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=medium-dpi" />
+		
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/jqm.autoComplete-1.5.2.js"></script>
+		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/prform.css" />
+        <style>
+            .ui-panel-inner {
+                padding: 0;
+            }
+            .ui-content {
+                padding: 0 2px;
+            }
+        </style>
+        
+		
+    </head>
+    <body>
+        <div data-role="page"  id="pageone" data-title="Phoniex tutorial">
+            
+            <div data-role="header" id="customHeader" data-position="fixed" data-tap-toggle="false" data-transition="none">
+                <div class="ui-btn-left ui-controlgroup ui-controlgroup-vertical ui-corner-all" type="horizontal" data-role="controlgroup" style="line-height: 4em;">
+                    <div class="ui-controlgroup-controls ">
+                        <a href="#panelMainMenu" class="ui-link"><i class="floatRight cursorPointer fa fa-bars fa-3x"></i></a>
+                    </div>
+                </div>
+    
+                <h1 class="head" id="head1" style="margin: 0%; height: 3em; line-height: 2.7em;">
+                    <!--<a href="m-login-success.php" rel="external"> <img src="images/kamwo-logo.png" width="80em;" /> </a>-->
+						PhoniexTutorials
+                </h1>
+    
+                <!--<div class="ui-btn-right ui-controlgroup ui-controlgroup-vertical ui-corner-all" type="horizontal" data-role="controlgroup" style="margin-left: 0px; margin-right: 0px;" id="cartIconHead">
+                    <div class="ui-controlgroup-controls">
+                        <a href="m-cart-view.php" rel="external" class="ui-link" id="btnCartIcon"><i class="fa fa-3x fa-shopping-cart" style="font-size: 2.5em;"></i>
+                            <span id="cartQuantity">
+                                2
+                            </span>
+                        </a>
+                    </div>
+                </div>-->
+            </div>
+			
+			<div data-role="panel" id="panelMainMenu" data-display="overlay" data-position-fixed="true">
+				<ul data-role="listview" data-inset="true" data-divider-theme="b">
+					<li data-role="list-divider" class="listHeader"><span style="width: 95%; float: left;">PheonixTutorials</span></li>
+					<li data-icon="false"><a href="m-guide-herbs.html" class="menuLinks" rel="external">Course</a></li>
+					<!--<li data-icon="false"><a href="m-guide-herbs-category.html" class="menuLinks" rel="external"></a></li>-->
+                    <!--<li data-icon="false"><a href="m-guide-formula-list.html" class="menuLinks" rel="external">Teacher Details</a></li>-->
+					<li data-icon="false"><a href="m-guide-formula-category.html" class="menuLinks" rel="external">Fee Structure</a></li>
+                    <li data-icon="false"><a href="m-guide-symptom-list.html" class="menuLinks" rel="external">Results</a></li>
+                    <li data-icon="false"><a href="m-guide-derma-list.html" class="menuLinks" rel="external">Chat room</a></li>
+                   <!-- <li data-icon="false"><a href="m-guide-trauma-list.html" class="menuLinks" rel="external"></a></li>-->
+                    <li data-icon="false"><a href="m-guide-pearls-list.html" class="menuLinks" rel="external">Data Entry</a></li>
+                    <li data-icon="false"><a href="m-guide-oils-list.html" class="menuLinks" rel="external">feedback</a></li>
+                    <li data-icon="false"><a href="" class="menuLinks" rel="external">About Us</a></li>
+					<li data-icon="false"><a href="loginform.html" class="menuLinks" rel="external">Login</a></li>
+				</ul>
+			</div><!-- /popup -->
+          
+            <div data-role="main" ><div class="headingBack">
+					<div class="ui-btn-left" id="headBorder">
+						<div class="headPrev" data-type="horizontal">
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<div class="headingName" data-type="horizontal" style="text-transform: capitalize;">
+							<a href="loginform.html" class="lg" id="bt" name="login" >
+								Login
+							</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="productDetails">
+					<div class="row1" >
+                        <div class="label">
+                            Parents_id :
+                        </div>
+                        <div class="ab">
+                            <input type="text" class="input" id="p" name="P_id"value="">
+                        </div>
+						</br>
+                        <div class="label">
+                            Student_id :
+                        </div>
+                        <div class="ab">
+                            <input type="text" class="input" id="st" name="st-id" value="">
+                        </div>
+						</br>
+                         <div class="label">
+                            Name :
+                        </div>
+                        <div class="ab">
+                            <input type="text" class="input" id="nm" name="name" value="">
+                        </div>
+						</br>
+                         <div class="label">
+                            Address :
+                        </div>
+                        <div class="ab">
+                           <textarea class="add" id="ad" name="address"></textarea>
+                        </div>
+						</br>
+						 <div class="label">
+                            Phone :
+                        </div>
+                        <div class="ab">
+                            <input type="text" class="input" id="ph" name="phone" value="">
+                        </div>
+						</br>
+						 <div class="label">
+                            Email :
+                        </div>
+                        <div class="ab">
+                            <input type="text" class="input" id="em" name="email" value="">
+                        </div>
+						</br>
+						 <div class="label">
+							Password :
+                        </div>
+                        <div class="ab">
+                            <input type="text" class="input" id="pass" name="password" value="">
+                        </div>
+						</br>
+                        <div class="btn">
+							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
+								Submit
+							</a>
+						</div>
+					</div>
+			    </div>
+				
+            </div> <!--end data role main-->
+
+			<div data-role="footer" data-position="fixed">
+				contect:;email:;
+			</div>
+        </div>
+        
+    </body>
+</html>
