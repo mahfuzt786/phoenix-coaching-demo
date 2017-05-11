@@ -1,10 +1,19 @@
 body{
-    background: #FF2678;
+    background: #345676;
 }
+h1.head{
+        background-color: #754578;
+        color: #ffffff;
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+    }
 div.abt{
+    float:left;
+    color:#FFF;
+    background: #345676;
     line-height: 2em;
-    width: 100%;
-    /*margin-left: 100px;*/
-    margin-right: 100px;
-    text-align: center;
+    height:3px;
+    width:100%;
+    font-size: medium;
 }
