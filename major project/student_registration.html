@@ -85,38 +85,38 @@
 				<div class="productDetails">
 					<div class="row1">
 						 <div class="label">
-                            Student_id :
+                            Student Id :
                         </div>
                         <div class="ad">
-                            <input type="text" id="st" name="st_id" value="">
+                            <input type="text" id="st_id" name="st_id" value="">
                         </div>
                         </br>
                         <div class="label">
-							 Admission_no :
+							 Admission No :
                         </div>
                         <div class="ad">
-                            <input type="text" id="ad" name="admission" value="">
+                            <input type="text" id="admission" name="admission" value="">
 						</div>
                         </br>
                         <div class="label">
                             Name :
                         </div>
                         <div class="ad">
-                            <input type="text" id="nm" name="name" value="">
+                            <input type="text" id="name" name="name" value="">
                         </div>
                         </br>
                         <div class="label">
                             Course :
                         </div>
                         <div class="ad">
-                            <input type="text" id="co" name="course" value="">
+                            <input type="text" id="course" name="course" value="">
                         </div>
                         </br>
                         <div class="label">
                             Address :
                         </div>
                         <div class="ad">
-                            <textarea class="at" id="aa" name="add" value=""></textarea>
+                            <textarea class="at" id="address" name="address" value=""></textarea>
                         </div>
                         </br>
 						
@@ -124,20 +124,20 @@
 							Password :
 						</div>
 						<div class="ad">
-							<input type="password" id="pw" name="Password" value="">
+							<input type="password" id="password" name="password" value="">
 						</div>
 						</br>
 						<div class="label">
-							Contact :
+							Contact Number:
 						</div>
 						<div class="ad">
-							<input type="text" id="cn" name="contact" value="">
+							<input type="text" id="contact" name="contact" value="">
 						</div>
 						<div class="label">
 							Email :
 						</div>
 						<div class="ad">
-							<input type="text" id="em" name="email" value="">
+							<input type="text" id="email" name="email" value="">
 						</div>
 						<div class="btn">
 							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
@@ -148,7 +148,27 @@
 			    </div>
 				
             </div> <!--end data role main-->
-
+			
+			<!--popup for error messages-->
+			<div data-role="popup" class="ui-content" id="popupError" data-overlay-theme="b" data-theme="a" data-dismissible="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<div data-role="header" class="ui-content" id="errorHeader">
+					<h1>ERROR</h1>
+				</div>
+				<div role="main" class="ui-content" id="successBody">
+					<div class="successImgWrapper">
+						<img src="img/popup-stop.png" class="imgSuccess" />
+					</div>
+					
+					<p class="errorMessage" style="text-shadow: none; font-size: 0.86em;">
+						
+					</p>
+				</div>
+				<div data-role="footer" class="ui-content">
+					<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline btnOk" data-rel="back">OK</a>
+				</div>
+			</div>
+			
 			<div data-role="footer" data-position="fixed">
 				contect:;email:;
 			</div>

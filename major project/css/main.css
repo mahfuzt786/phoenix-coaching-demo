@@ -177,14 +177,10 @@ div#popupError {
     width: 18em;
 }
 div#popupError .ui-btn-icon-notext::after {
-    background-color: #8aa292;
+    background-color: #754578;
 }
 div#popupError #errorHeader {
-    /*height: 2em;
-    background: #8AA292;
-    color: #FFF;
-    text-align: left;*/
-    background: #8aa292 none repeat scroll 0 0;
+    background: #F00 none repeat scroll 0 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #fff;
@@ -212,7 +208,7 @@ div#popupError .successImgWrapper img.imgSuccess {
     width: 7em;
 }
 div#popupError p.errorMessage {
-    color: #000;
+    color: #F00;
     float: left;
     font-size: 0.86em;
     height: 8em;
@@ -223,7 +219,7 @@ div#popupError p.errorMessage {
     width: 100%;
 }
 div#popupError a.btnOk {
-    background-color: #8aa292 !important;
+    background-color: #754578 !important;
     bottom: 0;
     color: #fff;
     float: left;
@@ -278,7 +274,7 @@ div#popupSuccess p.successMessage {
     width: 100%;
 }
 div#popupSuccess a.btnOk {
-    background-color: #8aa292 !important;
+    background-color: #754578 !important;
     bottom: 0;
     color: #fff;
     float: left;
@@ -477,7 +473,7 @@ div#popupSignIn .ui-btn-icon-notext::after {
     background-color: #8aa292;
 }
 div#popupSignIn #successHeader {
-    background: #8aa292 none repeat scroll 0 0;
+    background: #754578 none repeat scroll 0 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #fff;
@@ -516,7 +512,7 @@ div#popupSignIn p.confirmMessage {
     overflow: hidden;
 }
 div#popupSignIn a.btnYes {
-    background-color: #8aa292 !important;
+    background-color: #754578 !important;
     bottom: 0;
     color: #fff;
     float: left;
@@ -525,7 +521,7 @@ div#popupSignIn a.btnYes {
     text-transform: uppercase;
 }
 div#popupSignIn a.btnNo {
-    background-color: #8aa292 !important;
+    background-color: #754578 !important;
     bottom: 0;
     color: #fff;
     float: left;
