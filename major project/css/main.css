@@ -1,5 +1,5 @@
 body{
-    background: #345676;
+    background: #fff;
 }
 .ui-title{
     padding:0 !important;
@@ -583,7 +583,7 @@ div#popupSort ul#mainMenu li a {
 }
 div.productDetails {
     /*height: 2.7em;*/
-    background-color: #344556;
+    background-color: #fff;
     position:static;
     line-height: 0;
     left: 0;

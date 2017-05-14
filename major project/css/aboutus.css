@@ -1,5 +1,5 @@
 body{
-    background: #345676;
+    background: #fff;
 }
 h1.head{
         background-color: #754578;
@@ -9,11 +9,15 @@ h1.head{
         margin-left: 0%;
     }
 div.abt{
-    float:left;
-    color:#FFF;
+    
+    color:#000;
     background: #345676;
     line-height: 2em;
     height:3px;
-    width:100%;
+    width:90%;
     font-size: medium;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #000;
+    
 }

@@ -1,5 +1,5 @@
 body{
-    background:#344556;
+    background:#fff;
 }
     h1.head{
         background-color: #754578;
@@ -11,8 +11,8 @@ body{
     div.row {
         float: left;
         width: 100%;
-        height: 3em;
-        background: #344556;
+        height: 29em;
+        background: #345676;
     }
     div.row div.label {
         float: left;
@@ -21,6 +21,7 @@ body{
         margin-right:  5%;
         line-height: 3em;
         text-align: right;
+        color: #fff;
         
     }
     div.row div.input {
@@ -28,27 +29,35 @@ body{
         width: 56%;
         height: 3em;
     }
-    div.row3{
+   /* div.row3{
         float:left;
         width:100%;
         height: 4em;
-         margin-top: 2em;
-         background: #344556;
-        }
-    div.row3 div.btn{
+        margin-top: 2em;
+        background: #fff;
+        }*/
+    div.row div.btn{
         float: left;
         width: 20%;
         height: 2em;
         margin-top:0em;
         margin-left: 30%;
     }
-    div.row3 div.btn a.but{
+    div.row div.btn a.but{
         text-transform: capitalize;
         color: #672445;
     }
-    div.row3 div.btn a.but:hover {
+    div.row div.btn a.but:hover {
         color:#ff0000;
     }
-    
+    div.row div.fgt{
+        float:left;
+        width:100%;
+        height: 2em;
+        margin-top: 3em;
+        margin-left: 30%;
+        color: #fff;
+        
+    }
     
    
