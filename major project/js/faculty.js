@@ -47,10 +47,53 @@ $(document).ready(function(){
 			$('div#popupError').popup("open");
 		}
         else{
-            $('div#popupError div#successBody p.errorMessage').text('Submit');
-			$('div#popupError').popup("open");
-			
-            $("div.row1 input#ad").val(v1);
+            $.ajax({
+				url: "services/faculty-info.php",
+				type: "POST",
+				data: {
+					action      : 'postItem',
+					f_id      :  v1,
+					name      : v2,
+					qualification      : v3,
+					course_id      :  v4,
+					//subject_id      :  v9,
+					email      :  v5,
+					ph_no      :  v6,
+					password      :  v7,
+					address      :  v8
+				},
+				dataType: "json",
+				success: function(result) {
+					if(result.status =='1')
+					{
+						$('div#popupError div#successBody p.errorMessage').text(result.message);
+						$('div#popupError').popup("open");
+					}
+					if(result.status =='0' && result.message == 'done')
+					{
+						location.reload();
+						/**Lobibox.alert("success",
+						{
+							msg: 'Successfully Added ',
+							callback: function ($this, type)
+							{
+								if(type=='ok')
+								{
+									location.reload();
+								}
+							}
+						});**/
+					}
+					else {
+						$('div#popupError div#successBody p.errorMessage').text(result.message);
+						$('div#popupError').popup("open");
+					}
+				},
+				error: function () {
+					$('div#popupError div#successBody p.errorMessage').text('Error in Adding');
+						$('div#popupError').popup("open");
+				}
+			});
         }
         
         });
@@ -64,7 +107,7 @@ $(document).ready(function(){
 	   
 	   /*email validation*/
 		function IsEmail(em) {
-		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-		return regex.test(em);
+			var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			return regex.test(em);
 		}
     });
