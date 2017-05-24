@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="js/jqm.autoComplete-1.5.2.js"></script>
+		<script type="text/javascript" src="js/faculty.js"></script>
 		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -54,16 +55,13 @@
 			<div data-role="panel" id="panelMainMenu" data-display="overlay" data-position-fixed="true">
 				<ul data-role="listview" data-inset="true" data-divider-theme="b">
 					<li data-role="list-divider" class="listHeader"><span style="width: 95%; float: left;">PheonixTutorials</span></li>
-					<li data-icon="false"><a href="m-guide-herbs.html" class="menuLinks" rel="external">Course</a></li>
-					<!--<li data-icon="false"><a href="m-guide-herbs-category.html" class="menuLinks" rel="external"></a></li>-->
-                    <!--<li data-icon="false"><a href="m-guide-formula-list.html" class="menuLinks" rel="external">Teacher Details</a></li>-->
-					<li data-icon="false"><a href="m-guide-formula-category.html" class="menuLinks" rel="external">Fee Structure</a></li>
-                    <li data-icon="false"><a href="m-guide-symptom-list.html" class="menuLinks" rel="external">Results</a></li>
-                    <li data-icon="false"><a href="m-guide-derma-list.html" class="menuLinks" rel="external">Chat room</a></li>
-                   <!-- <li data-icon="false"><a href="m-guide-trauma-list.html" class="menuLinks" rel="external"></a></li>-->
-                    <li data-icon="false"><a href="m-guide-pearls-list.html" class="menuLinks" rel="external">Data Entry</a></li>
-                    <li data-icon="false"><a href="m-guide-oils-list.html" class="menuLinks" rel="external">feedback</a></li>
-                    <li data-icon="false"><a href="" class="menuLinks" rel="external">About Us</a></li>
+					<li data-icon="false"><a href="student_registration.html" class="menuLinks" rel="external">Student details entry</a></li>
+					<li data-icon="false"><a href=".html" class="menuLinks" rel="external">Parent details entry</a></li>
+                    <li data-icon="false"><a href=".html" class="menuLinks" rel="external">Faculty details entry</a></li>
+                    <li data-icon="false"><a href=".html" class="menuLinks" rel="external">Chat room</a></li>
+                    <!--<li data-icon="false"><a href=".html" class="menuLinks" rel="external">Data Entry</a></li>-->
+                    <li data-icon="false"><a href="Feedbackform.html" class="menuLinks" rel="external">feedback</a></li>
+                    <li data-icon="false"><a href="Aboutus.html" class="menuLinks" rel="external">About Us</a></li>
 					<li data-icon="false"><a href="loginform.html" class="menuLinks" rel="external">Login</a></li>
 				</ul>
 			</div><!-- /popup -->
@@ -87,7 +85,7 @@
                             Faculty_id :
                         </div>
                         <div class="ab">
-                            <input type="text" class="input" id="p"name="f_id" value="">
+                            <input type="text" class="input" id="p" name="f_id" value="">
                         </div>
 						</br>
                         <div class="label">
@@ -105,18 +103,18 @@
                         </div>
 						</br>
                         <div class="label">
-                            Course_id:
+                            CourseID:
                         </div>
 						<div class="ab">
 							<input type="text" class='input' id="cid" name="C_id" value="">
 						</div>
-						</br>
+						<!--</br>
 						<div class="label">
 							subject_id :
                         </div>
                         <div class="ab">
                             <input type="text" class="input" id="ph" name="subject_id" value="">
-                        </div>
+                        </div>-->
 						</br>
 						<div class="label">
                             Email :
@@ -143,7 +141,7 @@
 							Address :
 						</div>
 						<div class="ab">
-                           <textarea class="add" id="ad" name="course_id" value=""></textarea>
+                           <textarea class="add" id="ad" name="address" value=""></textarea>
                         </div>
 						</br>
                         <div class="btn">
