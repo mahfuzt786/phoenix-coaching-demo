@@ -56,7 +56,7 @@ $(document).ready(function(){
         });
 		
 		/*phone number check*/
-		$('#contact').keyup(function () {
+		$('#ph').keyup(function () {
 			if (!this.value.match(/^([0-9]{0,15})$/)) {
 				this.value = this.value.replace(/[^0-9]/g, '').substring(0,15);
 			}

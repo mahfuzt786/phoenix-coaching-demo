@@ -21,14 +21,14 @@ $(document).ready(function(){
             $('div#popupError div#successBody p.errorMessage').text('Please Enter email');
 			$('div#popupError').popup("open");
         }
-        else if(!IsEmail(v8))
+        else if(!IsEmail(v3))
 		{
 			$('div#popupError div#successBody p.errorMessage').text('Please enter email in xxxxx@xxx.xxx format. ie john.doe@gmail.com');
 			$('div#popupError').popup("open");
 		}
      });
-     function IsEmail(email) {
+     function IsEmail(em) {
 		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-		return regex.test(email);
+		return regex.test(em);
 		}
 });
