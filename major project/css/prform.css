@@ -1,46 +1,46 @@
-body{
-    background: #345676;
+body {
+    background: #345676 none repeat scroll 0 0;
 }
-h1.head{
-        background-color: #754578;
-        color: #ffffff;
-        float: left;
-        width: 100%;
-        margin-left: 0%;
-    }
+h1.head {
+    background-color: #754578;
+    color: #ffffff;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+}
 div.row1 {
-        float: left;
-        width: 100%;
-        height: 467px;
-        background: #345676;
-    }
+    background: #345676 none repeat scroll 0 0;
+    float: left;
+    height: 467px;
+    width: 100%;
+}
 div.row1 div.label {
-        color:#ffffff;
-        shadow:none;
-        float: left;
-        width: 25%;
-        height: 3em;
-        margin-right:  5%;
-        line-height: 4em;
-        text-align: right;
-        } 
-div.row1 div.ab{
-        float: left;
-        width: 45%;
-        min-height: 3em;
-        max-height: 5em;
-        }
-div.row1 div.btn{
-        float: left;
-        width: 25%;
-        height: 3em;
-        margin-top:0em;
-        margin-left: 30%;
-    }
-    div.row1 div.btn a.but{
-        text-transform: capitalize;
-        color: #ff0000;
-    }
-    div.row1 div.btn a.but:hover {
-        color:#672445;
-    }
+    color: #ffffff;
+    float: left;
+    height: 3em;
+    line-height: 4em;
+    margin-right: 5%;
+    text-align: right;
+    width: 38%;
+}
+div.row1 div.ab {
+    float: left;
+    max-height: 5em;
+    min-height: 3em;
+    width: 17%;
+    margin-right: 25%;
+}
+div.row1 div.btn {
+    float: left;
+    height: -2em;
+    margin-left: 45%;
+    margin-top: 8px;
+    width: 8%;
+}
+div.row1 div.btn a.but {
+    color: #ff0000;
+    text-transform: capitalize;
+}
+div.row1 div.btn a.but:hover {
+    color: #672445;
+}

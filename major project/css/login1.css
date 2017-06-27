@@ -1,63 +1,52 @@
-body{
-    background:#fff;
+body {
+    background: #fff none repeat scroll 0 0;
 }
-    h1.head{
-        background-color: #754578;
-        color: #ffffff;
-        float: left;
-        width: 100%;
-        margin-left: 0%;
-    }
-    div.row {
-        float: left;
-        width: 100%;
-        height: 29em;
-        background: #345676;
-    }
-    div.row div.label {
-        float: left;
-        width: 25%;
-        height: 3em;
-        margin-right:  5%;
-        line-height: 3em;
-        text-align: right;
-        color: #fff;
-        
-    }
-    div.row div.input {
-        float: left;
-        width: 56%;
-        height: 3em;
-    }
-   /* div.row3{
-        float:left;
-        width:100%;
-        height: 4em;
-        margin-top: 2em;
-        background: #fff;
-        }*/
-    div.row div.btn{
-        float: left;
-        width: 20%;
-        height: 2em;
-        margin-top:0em;
-        margin-left: 30%;
-    }
-    div.row div.btn a.but{
-        text-transform: capitalize;
-        color: #672445;
-    }
-    div.row div.btn a.but:hover {
-        color:#ff0000;
-    }
-    div.row div.fgt{
-        float:left;
-        width:100%;
-        height: 2em;
-        margin-top: 3em;
-        margin-left: 30%;
-        color: #fff;
-        
-    }
-    
-   
+h1.head {
+    background-color: #754578;
+    color: #ffffff;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+}
+div.row {
+    background: #345676 none repeat scroll 0 0;
+    float: left;
+    height: 29em;
+    width: 100%;
+}
+div.row div.label {
+    color: #fff;
+    float: left;
+    height: 3em;
+    line-height: 3em;
+    margin-right: 5%;
+    text-align: right;
+    width: 41%;
+}
+div.row div.input {
+    float: left;
+    height: 3em;
+    width: 19%;
+}
+div.row div.btn {
+    float: left;
+    height: 2em;
+    margin-left: 48%;
+    margin-top: 0;
+    width: 11%;
+}
+div.row div.btn a.but {
+    color: #672445;
+    text-transform: capitalize;
+}
+div.row div.btn a.but:hover {
+    color: #ff0000;
+}
+div.row div.fgt {
+    color: #fff;
+    float: left;
+    height: 2em;
+    margin-left: 45%;
+    margin-top: 3em;
+    width: 100%;
+}

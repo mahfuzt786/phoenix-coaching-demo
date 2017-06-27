@@ -72,7 +72,7 @@ $(document).ready(function(){
 					if(result.status =='0' && result.message == 'done')
 					{
 						location.reload();
-						/**Lobibox.alert("success",
+						Lobibox.alert("success",
 						{
 							msg: 'Successfully Added ',
 							callback: function ($this, type)
@@ -82,7 +82,7 @@ $(document).ready(function(){
 									location.reload();
 								}
 							}
-						});**/
+						});
 					}
 					else {
 						$('div#popupError div#successBody p.errorMessage').text(result.message);

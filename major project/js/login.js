@@ -11,7 +11,7 @@ $(document).ready(function(){
 			$('div#popupError').popup("open");
         }
         else{
-        alert("ss,");
+        alert("ss");
         }
     });
      $("div.row").on("click","a#ba",function(){

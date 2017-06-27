@@ -11,30 +11,32 @@ h1.head {
 div.row1 {
     background: #345676 none repeat scroll 0 0;
     float: left;
-    height: 520px;
+    height: 515px;
     width: 100%;
 }
 div.row1 div.label {
     color: #ffffff;
     float: left;
     height: 3em;
-    line-height: 4em;
-    margin-right: 5%;
+    line-height: 5em;
+    margin-right: 11.6%;
     text-align: right;
-    width: 43%;
+    width: 36%;
 }
-div.row1 div.ab {
+div.row1 div.ad {
     float: left;
-    max-height: 5em;
+    margin-top: 9px;
+    max-height: 4em;
     min-height: 3em;
     width: 20%;
 }
 div.row1 div.btn {
     float: left;
-    height: 3em;
-    margin-left: 53%;
+    height: 49px;
+    margin-left: 49%;
+    margin-right: 33%;
     margin-top: 0;
-    width: 8%;
+    width: 9%;
 }
 div.row1 div.btn a.but {
     color: #ff0000;
