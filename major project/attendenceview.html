@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="js/jqm.autoComplete-1.5.2.js"></script>
-		<script type="text/javascript" src="js/st.js"></script>
+		<script type="text/javascript" src="js/attendenceview.js"></script>
 		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -88,12 +88,7 @@
                         <div class="ad">
                             <input type="text" id="st_id" name="st_id" value="">
                         </div>
-                        <div class="btn">
-							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
-								Search
-							</a>
-						</div>
-                        </br>
+                        
                         <div class="label">
                             Name :
                         </div>
@@ -102,10 +97,10 @@
                         </div>
                         </br>
                         <div class="label">
-                            Course :
+                            Subject id :
                         </div>
                         <div class="ad">
-                            <input type="text" id="course" name="course" value="">
+                            <input type="text" id="subid" name="subjectid" value="">
                         </div>
                         </br>
                         <div class="label">
@@ -114,7 +109,12 @@
                       <div class="ad">
                             <input type="text" id="mon" name="month" value="">
                         </div>
-                        
+                        <div class="btn">
+							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
+								Search
+							</a>
+						</div>
+                        </br>
                         </br>
 						
 						<div class="label">
@@ -132,8 +132,8 @@
 						</div>
 						
 						<div class="btn">
-							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
-								reset
+							<a href="#" class="but ui-btn ui-corner-all" id="btm" name="send" >
+								Refresh
 							</a>
 						</div>
 					</div>

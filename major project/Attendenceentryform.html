@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="js/jqm.autoComplete-1.5.2.js"></script>
-		<script type="text/javascript" src="js/st.js"></script>
+		<script type="text/javascript" src="js/attendence.js"></script>
 		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -89,7 +89,7 @@
                             <input type="text" id="st_id" name="st_id" value="">
                         </div>
                         <div class="btn">
-							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
+							<a href="#" class="but ui-btn ui-corner-all" id="btm" name="send" >
 								Search
 							</a>
 						</div>
@@ -102,10 +102,10 @@
                         </div>
                         </br>
                         <div class="label">
-                            Course :
+                            Subject id :
                         </div>
                         <div class="ad">
-                            <input type="text" id="course" name="course" value="">
+                            <input type="text" id="subid" name="subjectid" value="">
                         </div>
                         </br>
                         <div class="label">
@@ -118,19 +118,24 @@
                         </br>
 						
 						<div class="label">
-							Attendence :
+							Total attendence :
 						</div>
 						<div class="ad">
 							<input type="text" id="attend" name="attendence" value="">
 						</div>
 						</br>
 						<div class="label">
-							Total class :
+							Student attendence :
 						</div>
 						<div class="ad">
-							<input type="text" id="cl" name="t_class" value="">
+							<input type="text" id="cl" name="st_attend" value="">
 						</div>
-						
+						<div class="label">
+							status:
+						</div>
+						<div class="ad">
+							<input type="text" id="st" name="status" value="">
+						</div>
 						<div class="btn">
 							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
 								Submit
