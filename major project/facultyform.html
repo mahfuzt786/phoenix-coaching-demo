@@ -144,6 +144,7 @@
                            <textarea class="add" id="ad" name="address" value=""></textarea>
                         </div>
 						</br>
+						<input type="hidden" class="action" id="action" name="action" value="">
                         <div class="btn">
 							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
 								Submit
@@ -170,6 +171,25 @@
 				</div>
 				<div data-role="footer" class="ui-content">
 					<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline btnOk" data-rel="back">OK</a>
+				</div>
+			</div>
+			
+			<div data-role="popup" class="ui-content" id="popupSuccess" data-overlay-theme="b" data-theme="a" data-dismissible="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<div data-role="header" class="ui-content" id="successHeader">
+					<h1>SUCCESS</h1>
+				</div>
+				<div role="main" id="successBody" class="ui-content" style="background-color: #FFF;">
+					<div class="successImgWrapper">
+						<img src="img/popup-thumb.png" class="imgSuccess" />
+					</div>
+					
+					<p class="successMessage">
+						
+					</p>
+				</div>
+				<div data-role="footer" class="ui-content">
+					<a href="#" id="btnOk" class="ui-btn ui-corner-all ui-shadow ui-btn-inline btnOk" rel="external">OK</a>
 				</div>
 			</div>
 			

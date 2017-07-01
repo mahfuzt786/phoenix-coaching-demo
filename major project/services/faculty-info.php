@@ -138,10 +138,7 @@
 			else {
 				$allProductz->status = '0';
 				$allProductz->message = 'done';
-			}
-			if ( empty( $arRes ) ) {
-				return null;
-			}
+			}			
 		}
 		else {
 			$allProductz->status = '1';

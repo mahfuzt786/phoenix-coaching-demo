@@ -72,17 +72,8 @@ $(document).ready(function(){
 					if(result.status =='0' && result.message == 'done')
 					{
 						location.reload();
-						Lobibox.alert("success",
-						{
-							msg: 'Successfully Added ',
-							callback: function ($this, type)
-							{
-								if(type=='ok')
-								{
-									location.reload();
-								}
-							}
-						});
+						$('div#popupSuccess div#successBody p.errorMessage').text('Successfully Added ');
+						$('div#popupSuccess').popup("open");
 					}
 					else {
 						$('div#popupError div#successBody p.errorMessage').text(result.message);

@@ -10,7 +10,7 @@ require_once 'util.php';
 /*  When a user click the login button */
 $action = $_REQUEST['action']; //Calling program must pass action
 
-if ($action == "confirmLogin") {
+if ($action == "confirmLoginMobile") {
     confirmLogin($mysqli);
 }else {
     throw new Exception("Unknown Action: " + $action);
@@ -32,13 +32,13 @@ function confirmLogin($mysqli) {
 		//if (isset($_POST['rememberMe']))
 		if($rememberMe=='Y')
 		{
-			setcookie('__UserK', $emailId, $expire, '/');
-			setcookie('__PassK', $pass, $expire,'/');
-			setcookie('rememberMeK', 'checked', $expire,'/');
+			setcookie('__UserE', $emailId, $expire, '/');
+			setcookie('__PassE', $pass, $expire,'/');
+			setcookie('rememberMeE', 'checked', $expire,'/');
 		} else {
-			setcookie('__UserK', '', time() - 3600,'/');
-			setcookie('__PassK', '', time() - 3600,'/');
-			setcookie('rememberMeK', '', time() - 3600,'/');
+			setcookie('__UserE', '', time() - 3600,'/');
+			setcookie('__PassE', '', time() - 3600,'/');
+			setcookie('rememberMeE', '', time() - 3600,'/');
 		}
 			
         echo 'done';
@@ -52,9 +52,9 @@ function isValidIdPassword($loginId, $password, $mysqli) {
     if (!filter_var($loginId, FILTER_VALIDATE_EMAIL)) {
         return false;
     }
-
+	//$password	= base64_encode($password);
     $sql = "SELECT user.*
-					FROM krishibotor.user
+					FROM test.user
 				   WHERE loginId='$loginId'
 					 AND password='$password'";
     $arRes = $mysqli->query($sql);
@@ -68,18 +68,16 @@ function isValidIdPassword($loginId, $password, $mysqli) {
         $row = $arRes->fetch_object();
         $_SESSION[SESS_LOGIN_ID] = $row->userId;
         $_SESSION[SESS_LOGIN_NAME] = $row->first_name . ' ' . $row->last_name;
+		$_SESSION[SESS_USER_TYPE] = $row->userType;
         $remote_addr = $_SERVER['REMOTE_ADDR'];
         $sql = "INSERT  
-						INTO krishibotor.userlogin 
+						INTO test.userlogin 
 							 (userId,remote_addr)
 					   VALUE (" . $_SESSION[SESS_LOGIN_ID] . ",'" . $remote_addr . "')";
         $arRes = $mysqli->query($sql);
         if (!$arRes) {
             throw new Exception($mysqli->error);
         }
-		
-		
-
         return true;
     }
 }

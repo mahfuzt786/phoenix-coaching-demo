@@ -13,7 +13,7 @@ div.abt{
     color:#fff;
     background: #345676;
     line-height: 2em;
-    height:204px;
+    min-height:204px;
     width:90%;
     font-size: medium;
     margin: auto;

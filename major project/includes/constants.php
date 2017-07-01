@@ -29,7 +29,7 @@ const SESS_LOGIN_ID             = 'LOGIN_ID'; //id of logged in user
 const SESS_LOGIN_NAME           = 'LOGIN_NAME'; //username
 const SESS_LOGIN_MSG            = 'LOGIN_MSG';
 const SESS_ACCESS_LEVEL         = 'SESS_ACCESS_LEVEL';
-const SESS_MEMBERSHIP_NAME      = 'SESS_MEMBERSHIP_NAME';
+const SESS_USER_TYPE      		= 'SESS_USER_TYPE';
 
 
 define("LOGON_MESSAGE",             "logon_message");
