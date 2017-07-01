@@ -10,10 +10,11 @@
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="js/jqm.autoComplete-1.5.2.js"></script>
+		<script type="text/javascript" src="js/st.js"></script>
 		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/prform.css" />
+        <link rel="stylesheet" href="css/attendence.css" />
         <style>
             .ui-panel-inner {
                 padding: 0;
@@ -73,73 +74,78 @@
 							<i class="fa fa-chevron-left"></i>
 						</div>
 						<div class="headingName" data-type="horizontal" style="text-transform: capitalize;">
-							<a href="loginform.html" class="lg" id="bt" name="login" >
+							<a href="loginform.html" rel="external" class="lg" id="bt" name="login" >
 								Login
 							</a>
 						</div>
 					</div>
 				</div>
-			
 				<div class="productDetails">
-					<div class="row1" >
+					<div class="row1">
+						 <div class="label">
+                            Student Id :
+                        </div>
+                        <div class="ad">
+                            <input type="text" id="st_id" name="st_id" value="">
+                        </div>
+                        
                         <div class="label">
-                            Parents_id :
-                        </div>
-                        <div class="ab">
-                            <input type="text" class="input" id="p" name="P_id"value="">
-                        </div>
-						</br>
-                        <div class="label">
-                            Student_id :
-                        </div>
-                        <div class="ab">
-                            <input type="text" class="input" id="st" name="st-id" value="">
-                        </div>
-						</br>
-                         <div class="label">
                             Name :
                         </div>
-                        <div class="ab">
-                            <input type="text" class="input" id="nm" name="name" value="">
+                        <div class="ad">
+                            <input type="text" id="name" name="name" value="">
                         </div>
-						</br>
-                         <div class="label">
-                            Address :
+                        </br>
+                        <div class="label">
+                            Subject id:
                         </div>
-                        <div class="ab">
-                           <textarea class="add" id="ad" name="address"></textarea>
+                        <div class="ad">
+                            <input type="text" id="subid" name="subjectid" value="">
                         </div>
-						</br>
-						 <div class="label">
-                            Phone :
+                        </br>
+                        <div class="label">
+                            Test name:
                         </div>
-                        <div class="ab">
-                            <input type="text" class="input" id="ph" name="phone" value="">
+                      <div class="ad">
+                            <input type="text" id="ts" name="test" value="">
                         </div>
-						</br>
-						 <div class="label">
-                            Email :
-                        </div>
-                        <div class="ab">
-                            <input type="text" class="input" id="em" name="email" value="">
-                        </div>
-						</br>
-						 <div class="label">
-							Password :
-                        </div>
-                        <div class="ab">
-                            <input type="text" class="input" id="pass" name="password" value="">
-                        </div>
-						</br>
                         <div class="btn">
 							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
-								Submit
+								Search
+							</a>
+						</div>
+                        </br>
+                        </br>
+						
+						<div class="label">
+							Marks obtain :
+						</div>
+						<div class="ad">
+							<input type="text" id="markso" name="markop" value="">
+						</div>
+						</br>
+						<div class="label">
+							Total marks :
+						</div>
+						<div class="ad">
+							<input type="text" id="cl" name="t_marks" value="">
+						</div>
+						<div class="label">
+							status:
+						</div>
+						<div class="ad">
+							<input type="text" id="cl" name="t_class" value="">
+						</div>
+						<div class="btn">
+							<a href="#" class="but ui-btn ui-corner-all" id="bt" name="send" >
+								Reset
 							</a>
 						</div>
 					</div>
 			    </div>
 				
             </div> <!--end data role main-->
+			
 			<!--popup for error messages-->
 			<div data-role="popup" class="ui-content" id="popupError" data-overlay-theme="b" data-theme="a" data-dismissible="false">
 				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
@@ -160,9 +166,8 @@
 				</div>
 			</div>
 			
-			
 			<div data-role="footer" data-position="fixed">
-				contect:;email:;
+				contect: +9188768954 ; email: priyangshubaruah05@yahoo.in;
 			</div>
         </div>
         
