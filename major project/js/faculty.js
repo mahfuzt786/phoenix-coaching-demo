@@ -56,7 +56,7 @@ $(document).ready(function(){
 					name      : v2,
 					qualification      : v3,
 					course_id      :  v4,
-					
+					//subject_id      :  v9,
 					email      :  v5,
 					ph_no      :  v6,
 					password      :  v7,
